@@ -32,7 +32,7 @@ preferences {
         section("Add a Camera") {
         	input("CameraStreamPathList","enum", title: "Camera Stream Path", description: "Please enter your camera's streaming path", required:false, submitOnChange: true,
             options: [ //add your camera urls here
-	    ["http://[ipaddress]goform/stream?cmd=get&channel=0":"Name of Camera"], //GS3504	    
+	    ["http://[ipaddress]/goform/stream?cmd=get&channel=0":"Name of Camera"], //GS3504	    
             ["rtsp://user:password@[ipaddress]/Streaming/Channels/1":"Name of Camera"], //hikvision
             ["http://[ipaddress]:[port]/mjpeg.cgi?user=user&password=password&channel=1.mjpeg":"Name of Camera"], //dlink 932l
             ["http://user:password@[ipaddress]/nphMotionJpeg?Resolution=640x480&Quality=Standard":"Name of Camera"] //panasonic bl-140c
